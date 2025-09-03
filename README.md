@@ -12,6 +12,8 @@ Ein vollständiges Template für die Entwicklung von ChurchTools Custom Modules 
 
 ## Schnellstart
 
+### Option 1: Manuell verwenden
+
 1. **Template verwenden:**
    ```bash
    git clone https://github.com/bwl21/ct-plugin-template-ona.git mein-neues-modul
@@ -34,6 +36,31 @@ Ein vollständiges Template für die Entwicklung von ChurchTools Custom Modules 
    ```bash
    npm run dev
    ```
+
+### Option 2: Mit Ona AI (Empfohlen)
+
+1. **Neuen Ona Account erstellen** auf [ona.ai](https://ona.ai)
+
+2. **Prompt verwenden** - Kopiere den Inhalt aus `prompt-for-ona.md` und passe die Projekt-Spezifikationen an:
+   ```markdown
+   ## HIER ANPASSEN:
+   **Titel:** "Mein Neues Modul"
+   **Kürzel:** "meinModul"
+   **Zweck:** "Beschreibung des Moduls"
+   **Features:** "Feature 1, Feature 2, Feature 3, Feature 4"
+   ```
+
+3. **Prompt eingeben** - Füge den angepassten Prompt in Ona ein
+
+4. **Automatische Erstellung** - Ona erstellt das komplette Projekt:
+   - ✅ Template-Download und Setup
+   - ✅ Projekt-Anpassungen
+   - ✅ ChurchTools Design System Integration
+   - ✅ Git-Repository Initialisierung
+   - ✅ Development Server Start
+   - ✅ Deployment-System Setup
+
+**Vorteil:** Vollautomatische Erstellung in wenigen Minuten ohne manuelle Schritte!
 
 ## Projekt-Struktur
 
@@ -172,9 +199,26 @@ const response = await churchtoolsClient.get('/api/persons');
 - **ChurchTools Client** - API-Integration
 - **ESLint + Prettier** - Code-Qualität und Formatierung
 
+## Ona AI Integration
+
+Dieses Template ist speziell für die Verwendung mit [Ona AI](https://ona.ai) optimiert:
+
+### Prompt-Datei
+- `prompt-for-ona.md` - Vollständiger Prompt für automatische Projekterstellung
+- Einfach Projekt-Spezifikationen anpassen und in Ona eingeben
+- Automatische Erstellung des kompletten ChurchTools Custom Modules
+
+### Vorteile mit Ona
+- ⚡ **Schnell** - Projekt in wenigen Minuten erstellt
+- 🎯 **Präzise** - Keine manuellen Fehler
+- 🔄 **Konsistent** - Immer gleiche Qualität
+- 📚 **Dokumentiert** - Vollständige Dokumentation inklusive
+
 ## Support
 
-Für Fragen zur ChurchTools API besuche das [ChurchTools Forum](https://forum.church.tools).
+- **ChurchTools API:** [ChurchTools Forum](https://forum.church.tools)
+- **Template Issues:** [GitHub Issues](https://github.com/bwl21/ct-plugin-template-ona/issues)
+- **Ona AI:** [Ona Documentation](https://ona.ai)
 
 ## Lizenz
 
