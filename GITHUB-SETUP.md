@@ -1,14 +1,14 @@
 # GitHub Repository Setup
 
-Anleitung zum Erstellen eines neuen GitHub-Repositories für das ChurchTools Custom Module Template.
+Anleitung zum Erstellen eines neuen GitHub-Repositories für das ChurchTools Extension Template.
 
 ## 1. Neues Repository auf GitHub erstellen
 
 1. Gehe zu [GitHub](https://github.com) und melde dich an
 2. Klicke auf das **"+"** Symbol oben rechts → **"New repository"**
 3. Repository-Einstellungen:
-   - **Repository name:** `churchtools-custom-module-template`
-   - **Description:** `Complete template for ChurchTools Custom Module development with Design System and auto-deployment`
+   - **Repository name:** `churchtools-extension-template`
+   - **Description:** `Complete template for ChurchTools Extension development with Design System and auto-deployment`
    - **Visibility:** Public ✅
    - **Initialize repository:** 
      - ❌ **NICHT** "Add a README file" ankreuzen
@@ -20,7 +20,7 @@ Anleitung zum Erstellen eines neuen GitHub-Repositories für das ChurchTools Cus
 
 ```bash
 # Remote hinzufügen (URL durch deine GitHub-URL ersetzen)
-git remote add origin https://github.com/DEIN-USERNAME/churchtools-custom-module-template.git
+git remote add origin https://github.com/DEIN-USERNAME/churchtools-extension-template.git
 
 # Branch auf main umbenennen
 git branch -M main
@@ -45,12 +45,12 @@ git push -u origin main
    - `vue3`
    - `typescript`
    - `template`
-   - `custom-module`
+   - `extension`
    - `design-system`
 
 ### Repository-Beschreibung
 ```
-Complete template for ChurchTools Custom Module development with Vue 3, TypeScript, Design System integration, and automatic deployment packaging.
+Complete template for ChurchTools Extension development with Vue 3, TypeScript, Design System integration, and automatic deployment packaging.
 ```
 
 ## 4. Template-URL für Prompt aktualisieren
@@ -75,9 +75,9 @@ Dann auf GitHub:
 3. Title: **v1.0.0 - Initial Template Release**
 4. Description:
    ```markdown
-   # ChurchTools Custom Module Template v1.0.0
+   # ChurchTools Extension Template v1.0.0
    
-   Complete template for ChurchTools Custom Module development.
+   Complete template for ChurchTools Extension development.
    
    ## Features
    - Vue 3 + TypeScript
@@ -95,8 +95,8 @@ Dann auf GitHub:
 Andere können das Template jetzt so verwenden:
 
 ```bash
-git clone https://github.com/DEIN-USERNAME/churchtools-custom-module-template.git mein-neues-modul
-cd mein-neues-modul
+git clone https://github.com/DEIN-USERNAME/churchtools-extension-template.git meine-neue-extension
+cd meine-neue-extension
 rm -rf .git
 git init
 # ... weitere Anpassungen

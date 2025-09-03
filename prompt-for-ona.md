@@ -1,6 +1,6 @@
-# ChurchTools Custom Module mit Design System erstellen (Standalone)
+# ChurchTools Extension mit Design System erstellen (Standalone)
 
-Erstelle ein neues ChurchTools Custom Module mit vollständiger ChurchTools Design System Integration direkt im Root-Verzeichnis des Environments.
+Erstelle eine neue ChurchTools Extension mit vollständiger ChurchTools Design System Integration direkt im Root-Verzeichnis des Environments.
 
 **Hinweis:** Für einfachere Verwendung siehe `prompt-for-gitpod.md` (Fork + Gitpod Workflow).
 
@@ -11,7 +11,7 @@ Erstelle ein neues ChurchTools Custom Module mit vollständiger ChurchTools Desi
 **Zweck:** "[BESCHREIBUNG DES MODULS]"  
 **Features:** "[FEATURE 1, FEATURE 2, FEATURE 3, FEATURE 4]"
 
-**Template:** https://github.com/bwl21/ct-plugin-template-ona  
+**Template:** https://github.com/bwl21/ct-extension-template-ona  
 **Zielverzeichnis:** Root des Environments (nicht in Unterordner)
 
 ## Anforderungen:
@@ -54,7 +54,7 @@ Erstelle ein neues ChurchTools Custom Module mit vollständiger ChurchTools Desi
 - Git-Konfiguration: user.name und user.email setzen
 - `git add .` und Initial Commit mit aussagekräftiger Commit-Message:
   ```
-  Initial commit: ChurchTools Custom Module '[DEFINIERTER TITEL]'
+  Initial commit: ChurchTools Extension '[DEFINIERTER TITEL]'
   
   - Vue 3 + TypeScript setup
   - ChurchTools Design System integration
@@ -103,10 +103,10 @@ npm run deploy
 ## Erwartetes Ergebnis:
 
 - ✅ Alle Projektdateien direkt im Root-Verzeichnis
-- ✅ Funktionierendes Vue 3 + TypeScript ChurchTools Custom Module
+- ✅ Funktionierende Vue 3 + TypeScript ChurchTools Extension
 - ✅ ChurchTools Design System bereits integriert
 - ✅ Professional aussehende UI mit deutschen Inhalten
-- ✅ Modulspezifische Features im responsive Grid-Layout
+- ✅ Extension-spezifische Features im responsive Grid-Layout
 - ✅ Git-Repository mit Initial Commit
 - ✅ Lauffähiger Development Server mit exec_preview
 - ✅ **Deployment-System mit automatischem Packaging**

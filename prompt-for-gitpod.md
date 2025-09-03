@@ -1,6 +1,6 @@
-# ChurchTools Custom Module anpassen (Fork + Gitpod)
+# ChurchTools Extension anpassen (Fork + Gitpod)
 
-Passe das bereits geforkte ChurchTools Custom Module Template an deine spezifischen Anforderungen an.
+Passe das bereits geforkte ChurchTools Extension Template an deine spezifischen Anforderungen an.
 
 ## HIER ANPASSEN:
 
@@ -31,11 +31,11 @@ Passe das bereits geforkte ChurchTools Custom Module Template an deine spezifisc
 ### 4. Git-Repository aktualisieren
 - `git add .` und Commit mit aussagekräftiger Commit-Message:
   ```
-  feat: Customize module '[DEFINIERTER TITEL]'
+  feat: Customize extension '[DEFINIERTER TITEL]'
   
   - Updated project metadata and branding
   - Customized UI with specific features: [DEFINIERTE FEATURES]
-  - Module purpose: [DEFINIERTER ZWECK]
+  - Extension purpose: [DEFINIERTER ZWECK]
   - Ready for ChurchTools deployment
   
   Co-authored-by: Ona <no-reply@ona.com>
@@ -47,7 +47,7 @@ Passe das bereits geforkte ChurchTools Custom Module Template an deine spezifisc
 
 ## Erwartetes Ergebnis:
 
-- ✅ Angepasstes ChurchTools Custom Module mit spezifischen Inhalten
+- ✅ Angepasste ChurchTools Extension mit spezifischen Inhalten
 - ✅ Funktionierender Development Server mit exec_preview
 - ✅ Korrekte Metadaten (package.json, .env, index.html)
 - ✅ Angepasste Vue-Komponenten mit definierten Features

@@ -1,8 +1,8 @@
-# ChurchTools Custom Module Template
+# ChurchTools Extension Template
 
-Ein vollständiges Template für die Entwicklung von ChurchTools Custom Modules mit integriertem Design System und Deployment-Automatisierung.
+Ein vollständiges Template für die Entwicklung von ChurchTools Extensions mit integriertem Design System und Deployment-Automatisierung.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/bwl21/ct-plugin-template-ona)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/bwl21/ct-extension-template-ona)
 
 ## Features
 
@@ -19,9 +19,9 @@ Ein vollständiges Template für die Entwicklung von ChurchTools Custom Modules 
 **Der einfachste und schnellste Weg:**
 
 1. **Template forken:**
-   - Gehe zu https://github.com/bwl21/ct-plugin-template-ona
+   - Gehe zu https://github.com/bwl21/ct-extension-template-ona
    - Klicke **"Fork"** → Erstelle Fork in deinem GitHub Account
-   - Benenne das Repository um (z.B. `mein-neues-modul`)
+   - Benenne das Repository um (z.B. `meine-neue-extension`)
 
 2. **In Gitpod öffnen:**
    - Klicke den Gitpod-Button in deinem geforkten Repository
@@ -43,14 +43,14 @@ Ein vollständiges Template für die Entwicklung von ChurchTools Custom Modules 
 
 1. **Template verwenden:**
    ```bash
-   git clone https://github.com/bwl21/ct-plugin-template-ona.git mein-neues-modul
-   cd mein-neues-modul
+   git clone https://github.com/bwl21/ct-extension-template-ona.git meine-neue-extension
+   cd meine-neue-extension
    rm -rf .git
    ```
 
 2. **Projekt anpassen:**
    - `package.json`: `name` ändern
-   - `.env`: `VITE_KEY` auf Ihr Modulkürzel setzen
+   - `.env`: `VITE_KEY` auf Ihr Extension-Kürzel setzen
    - `index.html`: `title` anpassen
    - `src/components/Start.vue`: Inhalte anpassen
 
@@ -202,16 +202,16 @@ npm run deploy
 
 ### Konfiguration
 
-1. **Modulkürzel:** In `.env` als `VITE_KEY` definieren
+1. **Extension-Kürzel:** In `.env` als `VITE_KEY` definieren
 2. **API-Zugriff:** ChurchTools Client ist vorkonfiguriert
 3. **Routing:** Base-URL wird automatisch gesetzt (`/ccm/[VITE_KEY]/`)
 
 ### Upload in ChurchTools
 
 1. ChurchTools Admin-Bereich öffnen
-2. "Custom Modules" navigieren
+2. "Extensions" navigieren
 3. ZIP-Datei aus `releases/` hochladen
-4. Modul aktivieren
+4. Extension aktivieren
 
 ## Anpassung
 
@@ -246,7 +246,7 @@ const response = await churchtoolsClient.get('/api/persons');
 
 ## Ona AI Integration 🤖
 
-Dieses Template ist speziell für die Verwendung mit [Ona AI](https://ona.ai) optimiert - einem KI-Software-Engineering-Agent, der komplette Projekte automatisch erstellt.
+Dieses Template ist speziell für die Verwendung mit [Ona AI](https://ona.ai) optimiert - einem KI-Software-Engineering-Agent, der komplette Extensions automatisch erstellt.
 
 ### Was macht Ona anders?
 Im Gegensatz zu ChatGPT oder anderen KI-Tools kann Ona:
@@ -259,7 +259,7 @@ Im Gegensatz zu ChatGPT oder anderen KI-Tools kann Ona:
 ### Prompt-System
 - `prompt-for-ona.md` - Optimierter Prompt für automatische Projekterstellung
 - **OCU-effizient** - Minimaler Token-Verbrauch durch Template-Integration
-- **Wiederverwendbar** - Für verschiedene ChurchTools Module anpassbar
+- **Wiederverwendbar** - Für verschiedene ChurchTools Extensions anpassbar
 
 ### Kostenvergleich
 | Methode | Zeit | Kosten | Fehlerrisiko |
@@ -276,7 +276,7 @@ Im Gegensatz zu ChatGPT oder anderen KI-Tools kann Ona:
 ## Support
 
 - **ChurchTools API:** [ChurchTools Forum](https://forum.church.tools)
-- **Template Issues:** [GitHub Issues](https://github.com/bwl21/ct-plugin-template-ona/issues)
+- **Template Issues:** [GitHub Issues](https://github.com/bwl21/ct-extension-template-ona/issues)
 - **Ona AI:** [Ona Documentation](https://ona.ai)
 
 ## Lizenz

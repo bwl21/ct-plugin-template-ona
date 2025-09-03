@@ -6,7 +6,7 @@ import { execSync } from 'child_process';
 import archiver from 'archiver';
 
 /**
- * ChurchTools Custom Module Packaging Script
+ * ChurchTools Extension Packaging Script
  * 
  * Erstellt ZIP-Archive mit Format: [kürzel]-[tag]-[commit].zip
  * Beispiel: meinKi-v1.0.0-a1b2c3d.zip

@@ -1,6 +1,6 @@
 # Releases Directory
 
-Dieses Verzeichnis enthält die gepackten ZIP-Archive für ChurchTools Custom Module Deployments.
+Dieses Verzeichnis enthält die gepackten ZIP-Archive für ChurchTools Extension Deployments.
 
 ZIP-Dateien werden automatisch mit folgendem Format erstellt:
 `[kürzel]-[tag]-[commit].zip`

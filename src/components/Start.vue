@@ -9,14 +9,14 @@ const onClick = () => store.count++;
     <div class="ct-container ct-p-4">
         <div class="ct-card">
             <div class="ct-card-header">
-                <h2 class="ct-h2 ct-mb-0 ct-text-center">ChurchTools Custom Module</h2>
+                <h2 class="ct-h2 ct-mb-0 ct-text-center">ChurchTools Extension</h2>
             </div>
             <div class="ct-card-body ct-text-center">
-                <p class="ct-mb-3">Ein Template für ChurchTools Custom Module Entwicklung</p>
+                <p class="ct-mb-3">Ein Template für ChurchTools Extension Entwicklung</p>
                 
                 <div class="ct-mb-4">
                     <h5 class="ct-h5 ct-mb-2">Willkommen</h5>
-                    <p>Dieses Template bietet eine vollständige Grundlage für die Entwicklung von ChurchTools Custom Modules mit modernem Design System.</p>
+                    <p>Dieses Template bietet eine vollständige Grundlage für die Entwicklung von ChurchTools Extensions mit modernem Design System.</p>
                 </div>
                 
                 <div class="ct-d-flex ct-justify-content-center ct-mb-3" style="gap: 0.5rem;">
