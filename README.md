@@ -2,6 +2,8 @@
 
 Ein vollständiges Template für die Entwicklung von ChurchTools Custom Modules mit integriertem Design System und Deployment-Automatisierung.
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/bwl21/ct-plugin-template-ona)
+
 ## Features
 
 ✅ **Vue 3 + TypeScript** - Moderne Frontend-Entwicklung  
@@ -12,7 +14,32 @@ Ein vollständiges Template für die Entwicklung von ChurchTools Custom Modules 
 
 ## Schnellstart
 
-### Option 1: Manuell verwenden
+### Option 1: Fork + Gitpod + Ona AI (Empfohlen) 🚀
+
+**Der einfachste und schnellste Weg:**
+
+1. **Template forken:**
+   - Gehe zu https://github.com/bwl21/ct-plugin-template-ona
+   - Klicke **"Fork"** → Erstelle Fork in deinem GitHub Account
+   - Benenne das Repository um (z.B. `mein-neues-modul`)
+
+2. **In Gitpod öffnen:**
+   - Klicke den Gitpod-Button in deinem geforkten Repository
+   - Oder manuell: `https://gitpod.io/#github.com/IHR-USERNAME/IHR-REPOSITORY`
+
+3. **Ona AI verwenden:**
+   - Neuen Ona Account erstellen auf [ona.ai](https://ona.ai)
+   - Prompt aus `prompt-for-gitpod.md` kopieren und anpassen
+   - In Ona eingeben → Automatische Projekterstellung
+   - **Kosten:** ~3-5 OCU (noch günstiger als Standalone-Version)
+
+**Vorteile:**
+- ✅ GitHub-Integration bereits vorhanden
+- ✅ Kann direkt pushen ohne Authentifizierung  
+- ✅ Eigenes Repository = volle Kontrolle
+- ✅ Noch günstiger (weniger OCU durch weniger Setup-Schritte)
+
+### Option 2: Manuell verwenden
 
 1. **Template verwenden:**
    ```bash
@@ -37,7 +64,7 @@ Ein vollständiges Template für die Entwicklung von ChurchTools Custom Modules 
    npm run dev
    ```
 
-### Option 2: Mit Ona AI (Empfohlen) 🤖
+### Option 3: Ona AI (Standalone) 🤖
 
 **Was ist Ona AI?**
 Ona ist ein KI-basierter Software-Engineering-Agent, der komplexe Entwicklungsaufgaben automatisch ausführt. Im Gegensatz zu ChatGPT kann Ona direkt Dateien erstellen, Code ausführen, Git-Repositories verwalten und komplette Projekte aufsetzen.

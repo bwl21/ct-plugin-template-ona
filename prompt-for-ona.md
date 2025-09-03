@@ -1,6 +1,8 @@
-# ChurchTools Custom Module mit Design System erstellen
+# ChurchTools Custom Module mit Design System erstellen (Standalone)
 
 Erstelle ein neues ChurchTools Custom Module mit vollständiger ChurchTools Design System Integration direkt im Root-Verzeichnis des Environments.
+
+**Hinweis:** Für einfachere Verwendung siehe `prompt-for-gitpod.md` (Fork + Gitpod Workflow).
 
 ## HIER ANPASSEN:
 
