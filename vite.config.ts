@@ -14,7 +14,7 @@ export default ({ mode }) => {
         server: {
             host: '0.0.0.0',
             port: 5173,
-            allowedHosts: ['5173--01990e64-0d98-7f20-81f2-c977c35500c8.eu-central-1-01.gitpod.dev'],
+            allowedHosts: 'all',
         },
     });
 };

@@ -1,88 +1,79 @@
-# mein ki modell
+# ChurchTools Custom Module Template
 
-Ein ChurchTools Custom Module für KI-Funktionalitäten.
+Ein vollständiges Template für die Entwicklung von ChurchTools Custom Modules mit integriertem Design System und Deployment-Automatisierung.
 
-**Titel:** mein ki modell  
-**Kürzel:** meinKi
+## Features
 
-## Beschreibung
+✅ **Vue 3 + TypeScript** - Moderne Frontend-Entwicklung  
+✅ **ChurchTools Design System** - Vollständige UI-Komponenten Integration  
+✅ **Automatisches Deployment** - ZIP-Packaging für ChurchTools Upload  
+✅ **Development Tools** - ESLint, Prettier, Hot Reload  
+✅ **Git-Integration** - Versionierung und Release-Management  
 
-Dieses Custom Module erweitert ChurchTools um KI-basierte Funktionen und Automatisierungen.
+## Schnellstart
 
-## Konfiguration
+1. **Template verwenden:**
+   ```bash
+   git clone [DIESES-REPOSITORY] mein-neues-modul
+   cd mein-neues-modul
+   rm -rf .git
+   ```
 
-In der `.env` Datei können die notwendigen Konstanten für das Projekt konfiguriert werden:
+2. **Projekt anpassen:**
+   - `package.json`: `name` ändern
+   - `.env`: `VITE_KEY` auf Ihr Modulkürzel setzen
+   - `index.html`: `title` anpassen
+   - `src/components/Start.vue`: Inhalte anpassen
 
-- `VITE_KEY=meinKi` - Das Kürzel des Plugins in ChurchTools
-- `VITE_BASE_URL` - Die URL der ChurchTools-Instanz für lokale Entwicklung
-- `VITE_USERNAME` und `VITE_PASSWORD` - Anmeldedaten für lokale Entwicklung
+3. **Dependencies installieren:**
+   ```bash
+   npm install
+   ```
 
-⚠️ **Wichtig:** Speichere keine Produktions-Anmeldedaten in dieser Datei!
+4. **Development starten:**
+   ```bash
+   npm run dev
+   ```
 
-## Technologie-Stack
+## Projekt-Struktur
 
-- Vue 3 mit TypeScript
-- Pinia für State Management
-- Vue Router für Navigation
-- ChurchTools Client API
-- ChurchTools Design System Integration
-- Vite als Build-Tool
-- ESLint und Prettier für Code-Qualität
+```
+├── src/
+│   ├── components/          # Vue-Komponenten
+│   ├── style.css           # ChurchTools Design System
+│   ├── App.vue             # Haupt-App-Komponente
+│   ├── main.ts             # Entry Point
+│   ├── router.ts           # Vue Router
+│   └── store.ts            # Pinia Store
+├── scripts/
+│   └── package.js          # Deployment-Script
+├── releases/               # ZIP-Archive für ChurchTools
+├── dist/                   # Build-Output
+├── .env                    # Umgebungsvariablen
+├── vite.config.ts          # Vite-Konfiguration
+└── package.json            # NPM-Konfiguration
+```
 
-## Design System
+## ChurchTools Design System
 
-Das Modul verwendet das ChurchTools Design System mit folgenden Features:
+Das Template enthält ein vollständiges ChurchTools Design System:
 
 ### Farben
-- **Primary:** `#0e204b` (ChurchTools Blau)
-- **Secondary:** `#f8f9fa` (Heller Hintergrund)
-- **Accent:** `#007bff` (Aktionsfarbe)
-- **Success/Warning/Danger:** Standard Bootstrap-Farben
+- `--ct-primary: #0e204b` (ChurchTools Blau)
+- `--ct-secondary: #f8f9fa` (Heller Hintergrund)
+- `--ct-accent: #007bff` (Aktionsfarbe)
 
 ### CSS-Klassen
-- `ct-btn`, `ct-btn-primary`, `ct-btn-secondary` - Buttons
-- `ct-card`, `ct-card-header`, `ct-card-body` - Karten-Layout
-- `ct-container` - Container mit max-width
-- `ct-h1` bis `ct-h6` - Typografie
-- `ct-form-control`, `ct-form-group` - Formulare
-- `ct-alert-*` - Benachrichtigungen
-- `ct-badge-*` - Badges
-- Utility-Klassen: `ct-text-center`, `ct-mb-*`, `ct-p-*`, etc.
-
-### Responsive Design
-- Mobile-first Ansatz
-- Breakpoint bei 768px
-- Grid-Layout für Feature-Übersicht
+- **Buttons:** `ct-btn`, `ct-btn-primary`, `ct-btn-secondary`
+- **Cards:** `ct-card`, `ct-card-header`, `ct-card-body`
+- **Typography:** `ct-h1` bis `ct-h6`
+- **Forms:** `ct-form-control`, `ct-form-group`, `ct-form-label`
+- **Alerts:** `ct-alert-info/success/warning/danger`
+- **Utilities:** `ct-text-center`, `ct-mb-*`, `ct-p-*`, `ct-d-flex`
 
 ## Entwicklung
 
 ```bash
-npm install
-npm run dev
-```
-
-## Build
-
-```bash
-npm run build
-```
-
-## UI-Komponenten
-
-Das Modul zeigt eine moderne, ChurchTools-konforme Benutzeroberfläche mit:
-
-- **Header-Karte** mit Modulname und Beschreibung
-- **Interaktiver Test-Button** mit Zähler-Funktionalität
-- **Feature-Grid** mit geplanten KI-Funktionen
-- **Responsive Design** für Desktop und Mobile
-- **Development-Navbar** (nur im Entwicklungsmodus)
-
-## Entwicklung
-
-```bash
-# Dependencies installieren
-npm install
-
 # Development Server starten
 npm run dev
 
@@ -96,11 +87,95 @@ npm run prettier
 npm run lint
 ```
 
+## Deployment
+
+### Automatisches Packaging
+
+```bash
+# Build und Package in einem Schritt
+npm run deploy
+
+# Nur Package erstellen (nach manuellem Build)
+npm run package
+```
+
+### ZIP-Datei Format
+
+Die erstellten ZIP-Archive folgen dem Format: `[kürzel]-[tag]-[commit].zip`
+
+- **Kürzel:** Aus VITE_KEY in .env
+- **Tag:** Git-Tag oder "v0.0.0" falls kein Tag
+- **Commit:** Kurzer Git-Commit-Hash
+
+**Beispiel:** `meinModul-v1.0.0-a1b2c3d.zip`
+
+### Deployment Workflow
+
+```bash
+# 1. Entwicklung abschließen
+git add .
+git commit -m "feat: neue Funktionalität"
+
+# 2. Version taggen (optional)
+git tag v1.0.0
+
+# 3. Build und Package erstellen
+npm run deploy
+
+# 4. ZIP-Datei in ChurchTools hochladen
+# Datei: releases/[kürzel]-[tag]-[commit].zip
+```
+
 ## ChurchTools Integration
 
-Das Modul ist als Custom Module für ChurchTools konzipiert und nutzt:
-- ChurchTools Client für API-Zugriff
-- Einheitliches Design System
-- Plugin-Architektur mit Kürzel "meinKi"
+### Konfiguration
 
-Für Fragen zur ChurchTools API besuche das [Forum](https://forum.church.tools).
+1. **Modulkürzel:** In `.env` als `VITE_KEY` definieren
+2. **API-Zugriff:** ChurchTools Client ist vorkonfiguriert
+3. **Routing:** Base-URL wird automatisch gesetzt (`/ccm/[VITE_KEY]/`)
+
+### Upload in ChurchTools
+
+1. ChurchTools Admin-Bereich öffnen
+2. "Custom Modules" navigieren
+3. ZIP-Datei aus `releases/` hochladen
+4. Modul aktivieren
+
+## Anpassung
+
+### Neue Komponenten
+
+Erstelle neue Vue-Komponenten in `src/components/` und verwende die ChurchTools Design System Klassen.
+
+### Styling
+
+Erweitere `src/style.css` mit zusätzlichen Styles, die das ChurchTools Design System ergänzen.
+
+### API-Integration
+
+Nutze den vorkonfigurierten `churchtoolsClient` für API-Aufrufe:
+
+```typescript
+import { churchtoolsClient } from '@churchtools/churchtools-client';
+
+// Beispiel API-Aufruf
+const response = await churchtoolsClient.get('/api/persons');
+```
+
+## Technologie-Stack
+
+- **Vue 3** - Progressive JavaScript Framework
+- **TypeScript** - Typisierte JavaScript-Entwicklung
+- **Vite** - Schneller Build-Tool und Dev-Server
+- **Pinia** - Vue State Management
+- **Vue Router** - Client-side Routing
+- **ChurchTools Client** - API-Integration
+- **ESLint + Prettier** - Code-Qualität und Formatierung
+
+## Support
+
+Für Fragen zur ChurchTools API besuche das [ChurchTools Forum](https://forum.church.tools).
+
+## Lizenz
+
+Dieses Template steht unter der MIT-Lizenz zur freien Verfügung.

@@ -9,23 +9,23 @@ const onClick = () => store.count++;
     <div class="ct-container ct-p-4">
         <div class="ct-card">
             <div class="ct-card-header">
-                <h2 class="ct-h2 ct-mb-0 ct-text-center">mein ki modell</h2>
+                <h2 class="ct-h2 ct-mb-0 ct-text-center">ChurchTools Custom Module</h2>
             </div>
             <div class="ct-card-body ct-text-center">
-                <p class="ct-mb-3">Ein ChurchTools Custom Module für KI-Funktionalitäten</p>
+                <p class="ct-mb-3">Ein Template für ChurchTools Custom Module Entwicklung</p>
                 
                 <div class="ct-mb-4">
                     <h5 class="ct-h5 ct-mb-2">Willkommen</h5>
-                    <p>Dieses Modul erweitert ChurchTools um intelligente KI-Features zur Automatisierung und Unterstützung Ihrer Gemeindearbeit.</p>
+                    <p>Dieses Template bietet eine vollständige Grundlage für die Entwicklung von ChurchTools Custom Modules mit modernem Design System.</p>
                 </div>
                 
                 <div class="ct-d-flex ct-justify-content-center ct-mb-3">
                     <button class="ct-btn ct-btn-primary" @click="onClick">
-                        KI-Feature testen
+                        Template testen
                     </button>
                 </div>
                 
-                <div class="ct-card" v-if="store.count > 0">
+                <div v-if="store.count > 0" class="ct-card">
                     <div class="ct-card-body">
                         <small>Test-Interaktionen: {{ store.count }}</small>
                     </div>
@@ -36,25 +36,25 @@ const onClick = () => store.count++;
         <!-- Feature Overview -->
         <div class="ct-card ct-mb-4" style="margin-top: 2rem;">
             <div class="ct-card-header">
-                <h4 class="ct-h4 ct-mb-0">Geplante KI-Features</h4>
+                <h4 class="ct-h4 ct-mb-0">Template Features</h4>
             </div>
             <div class="ct-card-body">
                 <div class="feature-grid">
                     <div class="feature-item">
-                        <h6 class="ct-h6">🤖 Intelligente Textverarbeitung</h6>
-                        <p>Automatische Zusammenfassungen von Predigten und Berichten</p>
+                        <h6 class="ct-h6">🎨 Design System</h6>
+                        <p>Vollständiges ChurchTools Design System mit CSS-Variablen</p>
                     </div>
                     <div class="feature-item">
-                        <h6 class="ct-h6">📅 Smart Scheduling</h6>
-                        <p>KI-unterstützte Terminplanung und Ressourcenverwaltung</p>
+                        <h6 class="ct-h6">⚡ Vue 3 + TypeScript</h6>
+                        <p>Moderne Frontend-Entwicklung mit Typisierung</p>
                     </div>
                     <div class="feature-item">
-                        <h6 class="ct-h6">💬 Chatbot-Integration</h6>
-                        <p>Automatische Beantwortung häufiger Fragen</p>
+                        <h6 class="ct-h6">📦 Auto-Deployment</h6>
+                        <p>Automatisches ZIP-Packaging für ChurchTools Upload</p>
                     </div>
                     <div class="feature-item">
-                        <h6 class="ct-h6">📊 Datenanalyse</h6>
-                        <p>Intelligente Auswertung von Gemeindedaten</p>
+                        <h6 class="ct-h6">🔧 Development Tools</h6>
+                        <p>ESLint, Prettier, Hot Reload und mehr</p>
                     </div>
                 </div>
             </div>
