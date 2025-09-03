@@ -37,11 +37,24 @@ Ein vollständiges Template für die Entwicklung von ChurchTools Custom Modules 
    npm run dev
    ```
 
-### Option 2: Mit Ona AI (Empfohlen)
+### Option 2: Mit Ona AI (Empfohlen) 🤖
 
-1. **Neuen Ona Account erstellen** auf [ona.ai](https://ona.ai)
+**Was ist Ona AI?**
+Ona ist ein KI-basierter Software-Engineering-Agent, der komplexe Entwicklungsaufgaben automatisch ausführt. Im Gegensatz zu ChatGPT kann Ona direkt Dateien erstellen, Code ausführen, Git-Repositories verwalten und komplette Projekte aufsetzen.
 
-2. **Prompt verwenden** - Kopiere den Inhalt aus `prompt-for-ona.md` und passe die Projekt-Spezifikationen an:
+**Kosten:**
+- **Kostenlose Testphase** verfügbar
+- **Pay-per-Use** Modell basierend auf OCU (Output Compute Units)
+- Dieses Template kostet ca. **5-10 OCU** (sehr günstig)
+- Deutlich günstiger als Stunden manueller Entwicklungszeit
+
+**Workflow:**
+
+1. **Account erstellen** auf [ona.ai](https://ona.ai)
+   - Registrierung mit E-Mail
+   - Kostenlose OCU zum Testen erhalten
+
+2. **Prompt anpassen** - Kopiere `prompt-for-ona.md` und ändere:
    ```markdown
    ## HIER ANPASSEN:
    **Titel:** "Mein Neues Modul"
@@ -52,15 +65,20 @@ Ein vollständiges Template für die Entwicklung von ChurchTools Custom Modules 
 
 3. **Prompt eingeben** - Füge den angepassten Prompt in Ona ein
 
-4. **Automatische Erstellung** - Ona erstellt das komplette Projekt:
+4. **Automatische Erstellung** - Ona führt alle Schritte aus:
    - ✅ Template-Download und Setup
-   - ✅ Projekt-Anpassungen
+   - ✅ Projekt-Anpassungen (Namen, Kürzel, Inhalte)
    - ✅ ChurchTools Design System Integration
-   - ✅ Git-Repository Initialisierung
-   - ✅ Development Server Start
-   - ✅ Deployment-System Setup
+   - ✅ Git-Repository Initialisierung mit Commits
+   - ✅ Development Server Start mit Preview-URL
+   - ✅ Deployment-System Setup und Test
 
-**Vorteil:** Vollautomatische Erstellung in wenigen Minuten ohne manuelle Schritte!
+**Vorteile gegenüber manueller Erstellung:**
+- ⚡ **10x schneller** - 5 Minuten statt 1-2 Stunden
+- 🎯 **Fehlerfrei** - Keine Tippfehler oder vergessene Schritte
+- 🔄 **Konsistent** - Immer gleiche Qualität und Struktur
+- 📚 **Vollständig** - Inklusive Dokumentation und Tests
+- 🚀 **Sofort einsatzbereit** - Mit laufendem Development Server
 
 ## Projekt-Struktur
 
@@ -199,20 +217,34 @@ const response = await churchtoolsClient.get('/api/persons');
 - **ChurchTools Client** - API-Integration
 - **ESLint + Prettier** - Code-Qualität und Formatierung
 
-## Ona AI Integration
+## Ona AI Integration 🤖
 
-Dieses Template ist speziell für die Verwendung mit [Ona AI](https://ona.ai) optimiert:
+Dieses Template ist speziell für die Verwendung mit [Ona AI](https://ona.ai) optimiert - einem KI-Software-Engineering-Agent, der komplette Projekte automatisch erstellt.
 
-### Prompt-Datei
-- `prompt-for-ona.md` - Vollständiger Prompt für automatische Projekterstellung
-- Einfach Projekt-Spezifikationen anpassen und in Ona eingeben
-- Automatische Erstellung des kompletten ChurchTools Custom Modules
+### Was macht Ona anders?
+Im Gegensatz zu ChatGPT oder anderen KI-Tools kann Ona:
+- 📁 **Dateien erstellen und bearbeiten**
+- 🔧 **Code kompilieren und ausführen**
+- 🌐 **Development Server starten**
+- 📦 **Git-Repositories verwalten**
+- 🚀 **Komplette Projekte aufsetzen**
 
-### Vorteile mit Ona
-- ⚡ **Schnell** - Projekt in wenigen Minuten erstellt
-- 🎯 **Präzise** - Keine manuellen Fehler
-- 🔄 **Konsistent** - Immer gleiche Qualität
-- 📚 **Dokumentiert** - Vollständige Dokumentation inklusive
+### Prompt-System
+- `prompt-for-ona.md` - Optimierter Prompt für automatische Projekterstellung
+- **OCU-effizient** - Minimaler Token-Verbrauch durch Template-Integration
+- **Wiederverwendbar** - Für verschiedene ChurchTools Module anpassbar
+
+### Kostenvergleich
+| Methode | Zeit | Kosten | Fehlerrisiko |
+|---------|------|--------|--------------|
+| **Manuell** | 1-2 Stunden | Entwicklerzeit | Hoch |
+| **Ona AI** | 5 Minuten | 5-10 OCU (~0.50€) | Minimal |
+
+### Warum Ona für dieses Template?
+- **Deployment-System** bereits integriert (spart OCU)
+- **Design System** vorkonfiguriert (keine Wiederholung)
+- **Template-Struktur** optimiert für KI-Verarbeitung
+- **Dokumentation** automatisch angepasst
 
 ## Support
 
