@@ -14,7 +14,7 @@ Ein vollständiges Template für die Entwicklung von ChurchTools Custom Modules 
 
 1. **Template verwenden:**
    ```bash
-   git clone [DIESES-REPOSITORY] mein-neues-modul
+   git clone https://github.com/bwl21/ct-plugin-template-ona.git mein-neues-modul
    cd mein-neues-modul
    rm -rf .git
    ```

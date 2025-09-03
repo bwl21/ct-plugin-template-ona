@@ -9,7 +9,7 @@ Erstelle ein neues ChurchTools Custom Module mit vollständiger ChurchTools Desi
 **Zweck:** "[BESCHREIBUNG DES MODULS]"  
 **Features:** "[FEATURE 1, FEATURE 2, FEATURE 3, FEATURE 4]"
 
-**Template:** 
+**Template:** https://github.com/bwl21/ct-plugin-template-ona  
 **Zielverzeichnis:** Root des Environments (nicht in Unterordner)
 
 ## Anforderungen:
