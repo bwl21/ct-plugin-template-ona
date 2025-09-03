@@ -45,8 +45,7 @@ Ona ist ein KI-basierter Software-Engineering-Agent, der komplexe Entwicklungsau
 **Kosten:**
 - **Kostenlose Testphase** verfügbar
 - **Pay-per-Use** Modell basierend auf OCU (Output Compute Units)
-- Dieses Template kostet ca. **5-10 OCU** (sehr günstig)
-- Deutlich günstiger als Stunden manueller Entwicklungszeit
+- Dieses Template kostet ca. **5-10 OCU**
 
 **Workflow:**
 
@@ -238,7 +237,7 @@ Im Gegensatz zu ChatGPT oder anderen KI-Tools kann Ona:
 | Methode | Zeit | Kosten | Fehlerrisiko |
 |---------|------|--------|--------------|
 | **Manuell** | 1-2 Stunden | Entwicklerzeit | Hoch |
-| **Ona AI** | 5 Minuten | 5-10 OCU (~0.50€) | Minimal |
+| **Ona AI** | 5 Minuten | 5-10 OCU | Minimal |
 
 ### Warum Ona für dieses Template?
 - **Deployment-System** bereits integriert (spart OCU)
