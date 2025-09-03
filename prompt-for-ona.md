@@ -18,10 +18,10 @@ Erstelle ein neues ChurchTools Custom Module mit vollständiger ChurchTools Desi
 - Clone Template-Repository temporär
 - Kopiere ALLE Dateien direkt ins Root-Verzeichnis (nicht in Unterordner)
 - Lösche temporäres Template-Verzeichnis
-- Aktualisiere Metadaten:
-  - `package.json`: name auf "[ihr-modul-name]"
-  - `.env`: VITE_KEY auf "[IhrKürzel]"
-  - `index.html`: title auf "[Ihr Modul Titel]"
+- Aktualisiere Metadaten mit den oben definierten Werten:
+  - `package.json`: name auf den Titel (kleingeschrieben, mit Bindestrichen)
+  - `.env`: VITE_KEY auf das definierte Kürzel
+  - `index.html`: title auf den definierten Titel
 - Bereinige .DS_Store und andere temporäre Dateien
 
 ### 2. ChurchTools Design System
@@ -32,9 +32,9 @@ Erstelle ein neues ChurchTools Custom Module mit vollständiger ChurchTools Desi
 ### 3. Vue-Komponenten Update
 - **src/App.vue:** Development-Navbar mit ChurchTools-Styling, `ct-main` Container
 - **src/components/Start.vue:** 
-  - Card-basiertes Layout mit Header "[Ihr Modul Titel]"
-  - Beschreibung des Modulzwecks
-  - Feature-Grid (4 Features basierend auf Ihren Anforderungen)
+  - Card-basiertes Layout mit Header aus dem definierten Titel
+  - Beschreibung aus dem definierten Zweck
+  - Feature-Grid mit den 4 definierten Features
   - Interaktiver Test-Button mit Zähler-Funktionalität
   - Responsive Grid (mobile: 1 Spalte, desktop: 2x2)
 - **index.html:** `cts` Klasse und ChurchTools-konforme Struktur
@@ -52,11 +52,11 @@ Erstelle ein neues ChurchTools Custom Module mit vollständiger ChurchTools Desi
 - Git-Konfiguration: user.name und user.email setzen
 - `git add .` und Initial Commit mit aussagekräftiger Commit-Message:
   ```
-  Initial commit: ChurchTools Custom Module '[Ihr Modul Titel]'
+  Initial commit: ChurchTools Custom Module '[DEFINIERTER TITEL]'
   
   - Vue 3 + TypeScript setup
   - ChurchTools Design System integration
-  - [Beschreibung der Hauptfeatures]
+  - [DEFINIERTE FEATURES]
   - Responsive design for mobile and desktop
   - Vite configuration for development
   
