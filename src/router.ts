@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Start from './components/Start.vue';
+import UIShowcase from './components/UIShowcase.vue';
 
 const routes: RouteRecordRaw[] = [
     { path: '/start', name: 'start', component: Start },
+    { path: '/ui', name: 'ui', component: UIShowcase },
     { path: '', redirect: { name: 'start' } },
 ];
 

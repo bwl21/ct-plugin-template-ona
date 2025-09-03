@@ -19,10 +19,13 @@ const onClick = () => store.count++;
                     <p>Dieses Template bietet eine vollständige Grundlage für die Entwicklung von ChurchTools Custom Modules mit modernem Design System.</p>
                 </div>
                 
-                <div class="ct-d-flex ct-justify-content-center ct-mb-3">
+                <div class="ct-d-flex ct-justify-content-center ct-mb-3" style="gap: 0.5rem;">
                     <button class="ct-btn ct-btn-primary" @click="onClick">
                         Template testen
                     </button>
+                    <router-link to="/ui" class="ct-btn ct-btn-secondary">
+                        UI-Komponenten
+                    </router-link>
                 </div>
                 
                 <div v-if="store.count > 0" class="ct-card">

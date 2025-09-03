@@ -24,16 +24,10 @@ Erstelle ein neues ChurchTools Custom Module mit vollständiger ChurchTools Desi
   - `index.html`: title auf "[Ihr Modul Titel]"
 - Bereinige .DS_Store und andere temporäre Dateien
 
-### 2. ChurchTools Design System Integration
-- Implementiere vollständiges Design System in `src/style.css` mit CSS-Variablen:
-  - ChurchTools-Farben: `--ct-primary: #0e204b`, `--ct-secondary: #f8f9fa`
-  - Alle `ct-*` CSS-Klassen für UI-Komponenten
-- Buttons: `ct-btn`, `ct-btn-primary`, `ct-btn-secondary` mit Hover-Effekten
-- Cards: `ct-card`, `ct-card-header`, `ct-card-body` mit Schatten
-- Typography: `ct-h1` bis `ct-h6` mit korrekten Größen
-- Forms: `ct-form-control`, `ct-form-group`, `ct-form-label`
-- Alerts: `ct-alert-info/success/warning/danger`
-- Utility-Klassen: `ct-text-center`, `ct-mb-*`, `ct-p-*`, `ct-d-flex`, etc.
+### 2. ChurchTools Design System
+- Template enthält bereits vollständiges ChurchTools Design System
+- Verwende vorhandene `ct-*` CSS-Klassen in Vue-Komponenten
+- UI-Showcase unter `/ui` Route zeigt alle verfügbaren Komponenten
 
 ### 3. Vue-Komponenten Update
 - **src/App.vue:** Development-Navbar mit ChurchTools-Styling, `ct-main` Container
@@ -108,7 +102,7 @@ npm run deploy
 
 - ✅ Alle Projektdateien direkt im Root-Verzeichnis
 - ✅ Funktionierendes Vue 3 + TypeScript ChurchTools Custom Module
-- ✅ Vollständige ChurchTools Design System Integration
+- ✅ ChurchTools Design System bereits integriert
 - ✅ Professional aussehende UI mit deutschen Inhalten
 - ✅ Modulspezifische Features im responsive Grid-Layout
 - ✅ Git-Repository mit Initial Commit
